@@ -31,6 +31,7 @@ const HomeContainer = (props) => {
             <Head>
                 <title>Search</title>
                 <link rel="icon" href="/favicon.ico" />
+                <link rel="stylesheet" href="/styles.css" />
             </Head>
 
             <h1>Giphy search app: {searchTerm} </h1>
@@ -38,7 +39,7 @@ const HomeContainer = (props) => {
             <div className="links">
                 <Link href="/search/Marvel"><span className="link" >Marvel</span></Link>
                 <Link href="/search/monkeys"><span className="link" >monkeys</span></Link>
-                <Link href="/search/harry-potter"><span className="link" >harryPoter</span></Link>
+                <Link href="/search/harry-poter"><span className="link" >harryPoter</span></Link>
             </div>
             <div className="giphy-search-result-grid">
                 {

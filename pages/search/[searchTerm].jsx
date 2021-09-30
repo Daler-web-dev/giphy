@@ -10,7 +10,8 @@ export default function Search (initProps) {
             <Head>
                 <title>Search {router.query.searchTerm} </title>
                 <link rel="icon" href="/favicon.ico" />
-                <meta name="description" content={initProps.giphys.map((each, index ) => each.title + ' ' )} />
+                <link rel="stylesheet" href="/styles.css" />
+                <meta name="description" content={props.giphys.map((each, index ) => each.title + ' ' )} />
             </Head>
             <h1>Search {router.query.searchTerm} </h1>
 
