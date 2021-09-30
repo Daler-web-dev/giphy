@@ -1,11 +1,8 @@
 import Head from 'next/head'
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import HomeContainer from '../containers/HomeContainer'
 
 export default function Home(initData) {
-	useEffect(() => {
-		console.log(initData);
-	}, []);
 	return (
 		<div className="container">
 			<Head>
@@ -16,6 +13,7 @@ export default function Home(initData) {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="stylesheet" href="/styles.css" />
+				<meta name="description" content="this is a Giphy app. Find giphies quickly" />
 			</Head>
 			<HomeContainer data={initData.catGiphys.data} />
 		</div>
@@ -26,5 +24,5 @@ export default function Home(initData) {
 export async function getStaticProps() {
 	let catGiphys = await fetch('https://api.giphy.com/v1/gifs/search?q=cats&api_key=fWsx77g2ZI5ssH0zX0n1lh91aLh0ev1Q&limit=10')
 	catGiphys = await catGiphys.json()
-	return {props: {catGiphys}} 
+	return { props: { catGiphys } }
 }

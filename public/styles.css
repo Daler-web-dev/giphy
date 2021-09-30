@@ -46,3 +46,18 @@ input {
 input:focus {
     outline: 0px;
 }
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0px;
+}
+.link {
+    text-decoration: none;
+    background-color: #B48181;
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px;
+    cursor: pointer;
+}
