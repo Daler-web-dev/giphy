@@ -31,7 +31,6 @@ const HomeContainer = (props) => {
             <Head>
                 <title>Search</title>
                 <link rel="icon" href="/favicon.ico" />
-                <link rel="stylesheet" href="/styles.css" />
             </Head>
 
             <h1>Giphy search app: {searchTerm} </h1>

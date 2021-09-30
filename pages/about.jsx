@@ -5,7 +5,6 @@ export default function About() {
         <div className="container">
             <Head>
                 <title>About | Giphy</title>
-                <link rel="stylesheet" href="/styles.css" />
             </Head>
             <h1>About</h1>
 
